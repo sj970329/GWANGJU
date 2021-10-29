@@ -1,0 +1,85 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+*{
+    margin: 0; padding: 0; font-family: 'Noto Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+::selection{background: #000; color: #fff}
+li{list-style: none;}
+a{text-decoration: none; color: inherit; display: block;}
+img{display: block; border: 0;}
+
+
+/* header */
+
+header{
+    width: 100%;
+    height: 100px;
+    background: #fff;
+    position: fixed;
+    z-index: 999;
+    box-shadow: 0 5px 10px 0 rgb(50 50 50 / 6%);
+}
+#head{
+    width: 100%;
+    height: 100px;
+}
+.logo{
+    width: 70%; height: auto;
+    padding: 20px 0 20px 10px;
+}
+
+/* toggle */
+
+.toggle-icon {
+    cursor: pointer;
+    width: 20%; height: 40px;
+}
+.bar1, .bar2, .bar3 {
+    background: rgb(132, 52, 77);
+    width: 40px;
+    height: 4px;
+    transition: 0.5s;
+    margin: 7px 0;
+}
+.rotate-icon .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-8px, 6px);
+    transform: rotate(-45deg) translate(-8px, 6px);
+}
+.rotate-icon .bar2 {
+    opacity: 0;
+}
+.rotate-icon .bar3 {
+    -webkit-transform: rotate(42deg) translate(-9px, -8px);
+    transform: rotate(42deg) translate(-9px, -8px);
+}
+
+/* nav */
+nav{
+    background: rgba(132, 52, 77, 0.8);
+    width: 100%; height: 100vh;
+    position: fixed; top: 0;
+    display: none;
+}
+.sgnb{
+    position: relative;
+    font-size: 1.2rem; font-weight: bold;
+}
+.sgnb>li{
+    padding: 20px 10px;
+    line-height: 60px;
+    color: #fff;
+}
+.sgnb>li:nth-child(1){padding-top: 50px;}
+.gnb{
+    display: none;
+    position: absolute; top: 10%; left: 40%;
+    font-weight: normal; font-size: 1rem;
+}
+.sub{
+    display: none;
+    font-weight: normal; font-size: .8rem;
+}
+.sub.on{font-weight: normal; font-size: .8rem;}
