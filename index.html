@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="img/favicon.ico">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery-1.12.4.min.js"></script>
+    <link href="css/jquery.bxslider.css" rel="stylesheet">
     <link rel="stylesheet" href="css/swiper.css"> 
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
@@ -23,6 +24,7 @@
                 <span class="bottom"></span>
             </div>
             <div class="fullscreen" id="fullscreen">
+                <div class="fullbg"></div>
                 <nav class="fullscreen-menu">
                     <ul class="sgnb">
                         <li><a href="#none">새소식</a>
@@ -195,18 +197,158 @@
                 </ul>
             </div>
         </section>
-        <section>
-            <div class="notice"></div>
-            <div class="n_slide"></div>
+        <section class="sec2">
+            <div class="notice">
+                <div class="notitle">
+                    <p>새소식</p>
+                </div>
+                <ul class="rolling">
+                    <li>
+                        <a href="#none"><span><img src="img/notice-icon.png" alt="공지사항"></span><span>명장과 함께하는 공예교실 온라인 강좌 접수안내</span></a>
+                    </li>
+                    <li>
+                        <a href="#none"><span><img src="img/notice-icon.png" alt="공지사항"></span><span>하반기 기획전 '충장로' 전시 안내</span></a>
+                    </li>
+                    <li>
+                        <a href="#none"><span><img src="img/notice-icon.png" alt="공지사항"></span><span>2021 덤벙첨벙 분청교실 참가 접수 안내</span></a>
+                    </li>
+                    <li>
+                        <a href="#none"><span><img src="img/notice-icon.png" alt="공지사항"></span><span>2021 박물관 인문학 산책 개설</span></a>
+                    </li>
+                </ul>
+                <div class="cont">
+                    <button class="prev"><a href="#none"><img src="img/noti-arr-up.png" alt="up"></a></button>
+                    <button class="next"><a href="#none"><img src="img/noti-arr-dn.png" alt="down"></a></button>
+                </div>
+            </div>
         </section>
-        <section>
-
+        <section class="sec3">
+            <div id="s_banner_wrap">
+                <ul class="bxslider_02">
+                  <li class="banner_01"></li>
+                  <li class="banner_02"></li>
+                  <li class="banner_03"></li>
+                  <li class="banner_04"></li>
+                </ul>
+                <div id="bx-pager1">
+                  <a data-slide-index="0" href="#none">1</a>
+                  <a data-slide-index="1" href="#none">2</a>
+                  <a data-slide-index="2" href="#none">3</a>
+                  <a data-slide-index="3" href="#none">4</a>
+                </div>
+            </div>
+            <div class="now">
+                <div class="nowTitle">
+                    <p>박물관은 지금</p>
+                </div>
+                <div class="btSlider">
+                        <ul>
+                            <li><a href="#none"><img src="img/now1.jpg" alt="slide1"></a></li>
+                            <li><a href="#none"><img src="img/now2.jpg" alt="slide2"></a></li>
+                            <li><a href="#none"><img src="img/now1.jpg" alt="slide1"></a></li>
+                        </ul>        
+                        <div class="arrow left"><a href="#none"><img src="img/misc-prev.png" alt="" onclick="left()"></a></div>
+                        <div class="arrow right"><a href="#none"><img src="img/misc-next.png" alt="" onclick="go()"></a></div>				
+                    </div>
+            </div>
         </section>
-        <section>
-
+        <section class="sec4">
+            <div class="display3">
+                <ul class="imgbox">
+                    <li><a href="#none"><img src="img/bg_mid01.jpg" alt="상설전시">
+                        <div class="txtbg">
+                            <div class="title">
+                                <h2>상설전시</h2>
+                                <p>3개의 실로 구성된 상설전시실은 유적, 유물, 향토문화의 가치를 직접 보실 수 있습니다.<br></p>
+                                <p class="sc">바로가기 ></p>
+                            </div>
+                        </div>
+                    </a>
+                    </li>
+                    <li><a href="#none"><img src="img/bg_mid02.jpg" alt="야외전시">
+                        <div class="txtbg">
+                            <div class="title">
+                                <h2>야외전시</h2>
+                                <p>22,000여 평의 야외전시장은 100여점의 민속자료와 시설물이 조성되어 있으며, 전통문화의 향기를 느껴보실 수 있습니다.<br></p>
+                                <p class="sc">바로가기 ></p>
+                            </div>
+                        </div>
+                    </a>
+                    </li>
+                    <li><a href="#none"><img src="img/bg_mid03.jpg" alt="충효동전시">
+                        <div class="txtbg">
+                            <div class="title">
+                                <h2>충효동전시</h2>
+                                <p>조선초기 15~6세기에 무등산 주변에 생산되었던 분청사기의 역사를 알 수 있으며, 350㎡의 전시실은 200여점의 자기·도구와 제작기법 그리고 가마시설을 재현한 시그니처를 관람 하실 수 있습니다.<br></p>
+                                <p class="sc">바로가기 ></p>
+                            </div>
+                        </div>
+                    </a>
+                    </li>
+                </ul>
+            </div>
         </section>
+        <section class="sec5">
+            <div class="cotitle">
+                <p>소장유물</p>
+                <a class="more" href="#none"><i class="fas fa-plus"></i></a>
+            </div>
+            <div id="container">
+                <div class="collect">
+                    <a href="#none"><img src="img/collect1.jpg" alt="송석정중수상량문"></a>
+                    <div class="txtBox">
+                        <a href="#none">
+                            <h3>송석정중수상량문</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="collect">
+                    <a class="colle" href="#none"><img src="img/collect2.jpg" alt="눌재집"></a>
+                    <div class="txtBox">
+                        <a href="#none">
+                            <h3>눌재집</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="collect">
+                    <a class="colle" href="#none"><img src="img/collect3.jpg" alt="남창상회달력"></a>
+                    <div class="txtBox">
+                        <a href="#none">
+                            <h3>남창상회달력</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="collect">
+                    <a class="colle" href="#none"><img src="img/collect4.png" alt="나주반"></a>
+                    <div class="txtBox">
+                        <a href="#none">
+                            <h3>나주반</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section></section>
+        <footer>
+            <div id="foot">
+                <div class="fLogo">
+                    <a href="#none">
+                       <img src="img/bt_logo.png" alt="footer logo">
+                    </a>
+               </div>
+               <div class="fMenu">
+                    <a href="#none">행정서비스헌장</a><a href="#none"><b>개인정보처리방침</b></a><a href="#none">영상정보처리운영방침</a><a href="#none">저작권보호정책</a><a href="#none">이용안내</a>
+               </div>
+               <div class="copyright">
+                   <p><b>[61104] 광주광역시 북구 서하로 48-25(용봉동)</b><br>
+                    대표전화 062)613-5337~8</p>
+               <p>Copyright ⓒ 2020 Gwangju Metropolitan City. All Rights Reserved.</p><br>
+               </div>
+            </div>
+        </footer>
     </div>
     <script src="js/swiper.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
