@@ -1,9 +1,39 @@
-function clickFunction() {
-    var para = document.getElementByClass("toggle-icon");
-    para.classList.toggle("rotate-icon");
+
+window.addEventListener('resize', slideFont);
+var st = document.querySelector(".slideTitle span");
+var ww = window.innerWidth; //현재 창 크기
+var fontSize;
+
+function slideFont(){
+    var newFont = 1.1 * (window.innerWidth/ww)
+    st.style.fontSize = newFont + "rem";
 }
 
 
+
+var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    loop: true,
+    autoplay: {
+      delay: 8000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
+
+$('#toggle').click(function() {
+    $(this).toggleClass('active');
+    $('#fullscreen').toggleClass('open');
+});
 
 $('.sgnb>li').click(
     function(){

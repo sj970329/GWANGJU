@@ -8,129 +8,205 @@
     <link rel="shortcut icon" href="img/favicon.ico">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="css/swiper.css"> 
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 <body>
     <header>
         <div id="head">
             <div class="logo">
-                <a href="#none"><img src="img/logo.png" alt=""></a>
+                <img src="img/logo.png" alt="logo">
             </div>
-            <div class="toggle-icon" onclick="clickFunction()">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
+            <div class="btn_container" id="toggle">
+                <span class="top"></span>
+                <span class="middle"></span>
+                <span class="bottom"></span>
             </div>
+            <div class="fullscreen" id="fullscreen">
+                <nav class="fullscreen-menu">
+                    <ul class="sgnb">
+                        <li><a href="#none">새소식</a>
+                            <ul class="gnb">
+                                <li><a href="#none">새소식</a></li>
+                                <li><a href="#none">묻고 답하기</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#none">전시마당</a>
+                            <ul class="gnb">
+                                <li><a href="#none">상설전시<i class="fas fa-plus"></i></a>
+                                    <ul class="sub">
+                                        <li><a href="#none">1층</a></li>
+                                        <li><a href="#none">2층</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#none">야외전시<i class="fas fa-plus"></i></a>
+                                    <ul class="sub">
+                                        <li><a href="#none">석재유물</a></li>
+                                        <li><a href="#none">시설물</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#none">기획전시</a></li>
+                                <li><a href="#none">충효동요지<i class="fas fa-plus"></i></a>
+                                    <ul class="sub">
+                                        <li><a href="#none">상설전시</a></li>
+                                        <li><a href="#none">가마터(광주 충효동 요지)</a></li>
+                                        <li><a href="#none">주변유적</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#none">월계동 장고분</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#none">자료마당</a>
+                            <ul class="gnb">
+                                <li><a href="#none">소장유물</a></li>
+                                <li><a href="#none">유물구입</a>
+                                    <ul class="sub">
+                                        <li><a href="#none">구입일정 및 매도신청 안내</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#none">유물기증<i class="fas fa-plus"></i></a>
+                                    <ul class="sub">
+                                        <li><a href="#none">기증 안내</a></li>
+                                        <li><a href="#none">기증 현황</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#none">박물관 소장 문화재<i class="fas fa-plus"></i></a>
+                                    <ul class="sub">
+                                        <li><a href="#none">광주시 문화재<i class="fas fa-link"></i></a></li>
+                                        <li><a href="#none">박물관 소장 문화재</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#none">발간물</a></li>
+                                <li><a href="#none">광주역사<i class="fas fa-plus"></i></a>
+                                    <ul class="sub">
+                                        <li><a href="#none">광주의연표</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#none">남도민속</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#none">교육·행사</a>
+                            <ul class="gnb">
+                                <li><a href="#none">온라인교육</a></li>
+                                <li><a href="#none">성인교육</a></li>
+                                <li><a href="#none">어린이교육</a></li>
+                                <li><a href="#none">세시행사</a></li>
+                                <li><a href="#none">문화계 소식<i class="fas fa-link"></i></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#none">이용안내·신청</a>
+                            <ul class="gnb">
+                                <li><a href="#none">관람안내</a></li>
+                                <li><a href="#none">유물/사진복제</a></li>
+                                <li><a href="#none">대관신청</a></li>
+                                <li><a href="#none">민속놀이기구대여<i class="fas fa-link"></i></a></li>
+                                <li><a href="#none">찾아오시는길</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#none">박물관소개</a>
+                            <ul class="gnb">
+                                <li><a href="#none">인사말</a></li>
+                                <li><a href="#none">설립목적</a></li>
+                                <li><a href="#none">박물관 연혁</a></li>
+                                <li><a href="#none">박물관 MI소개</a></li>
+                                <li><a href="#none">조직 및 업무</a></li>
+                                <li><a href="#none">전화번호<i class="fas fa-link"></i></a></li>
+                                <li><a href="#none">박물관은 지금</a></li>
+                                <li><a href="#none">박물관에서 해온 일<i class="fas fa-plus"></i></a>
+                                    <ul class="sub">
+                                        <li><a href="#none">사회교육</a></li>
+                                        <li><a href="#none">전시회</a></li>
+                                        <li><a href="#none">조사연구</a></li>
+                                        <li><a href="#none">간행물</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#none">민속박물관회<i class="fas fa-plus"></i></a>
+                                    <ul class="sub">
+                                        <li><a href="#none">소개</a></li>
+                                        <li><a href="#none">걸어온 길</a></li>
+                                        <li><a href="#none">입회신청</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+              </div>
         </div>
     </header>
-    <nav>
-        <ul class="sgnb">
-            <li><a href="#none">새소식</a>
-                <ul class="gnb">
-                    <li><a href="#none">새소식</a></li>
-                    <li><a href="#none">묻고 답하기</a></li>
-                </ul>
-            </li>
-            <li><a href="#none">전시마당</a>
-                <ul class="gnb">
-                    <li><a href="#none">상설전시</a>
-                        <ul class="sub">
-                            <li><a href="#none">1층</a></li>
-                            <li><a href="#none">2층</a></li>
-                        </ul>
+    <div class="infor">
+        <a href="#none"><img src="img/infor_icon.png" alt="information"></a>
+    </div>
+    <div class="swiper-container mySwiper">
+        <div class="slideTitle">
+            <h2><span>우리 조상의 역사와 전통이 살아 숨쉬는 공간</span><br><span class="ani">광주역사민속박물관</span></h2>
+        </div>
+        <div class="bg"></div>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="img/1.jpg" alt="slide">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/2.jpg" alt="slide">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/4.jpg" alt="slide">
+            </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <div id="content">
+        <section class="sec1">
+            <div class="Qtxt">
+                <p>자주찾는 <b>서비스</b></p>
+            </div>
+            <div class="Quick">
+                <ul>
+                    <li>
+                      온라인교육
+                      <span></span><span></span><span></span><span></span>
                     </li>
-                    <li><a href="#none">야외전시</a>
-                        <ul class="sub">
-                            <li><a href="#none">석재유물</a></li>
-                            <li><a href="#none">시설물</a></li>
-                        </ul>
+                    <li>
+                      기획전시
+                      <span></span><span></span><span></span><span></span>
                     </li>
-                    <li><a href="#none">기획전시</a></li>
-                    <li><a href="#none">충효동요지</a>
-                        <ul class="sub">
-                            <li><a href="#none">상설전시</a></li>
-                            <li><a href="#none">가마터(광주 충효동 요지)</a></li>
-                            <li><a href="#none">주변유적</a></li>
-                        </ul>
+                    <li>
+                      소장유물
+                       <span></span><span></span><span></span><span></span>
                     </li>
-                    <li><a href="#none">월계동 장고분</a></li>
-                </ul>
-            </li>
-            <li><a href="#none">자료마당</a>
-                <ul class="gnb">
-                    <li><a href="#none">소장유물</a></li>
-                    <li><a href="#none">유물구입</a>
-                        <ul class="sub">
-                            <li><a href="#none">구입일정 및 매도신청 안내</a></li>
-                        </ul>
+                    <li>
+                      성인교육
+                      <span></span><span></span><span></span><span></span>
                     </li>
-                    <li><a href="#none">유물기증</a>
-                        <ul class="sub">
-                            <li><a href="#none">기증 안내</a></li>
-                            <li><a href="#none">기증 현황</a></li>
-                        </ul>
+                    <li>
+                        어린이교육
+                        <span></span><span></span><span></span><span></span>
                     </li>
-                    <li><a href="#none">박물관 소장 문화재</a>
-                        <ul class="sub">
-                            <li><a href="#none">광주시 문화재</a></li>
-                            <li><a href="#none">박물관 소장 문화재</a></li>
-                        </ul>
+                    <li>
+                        세시행사
+                        <span></span><span></span><span></span><span></span>
                     </li>
-                    <li><a href="#none">발간물</a></li>
-                    <li><a href="#none">광주역사</a>
-                        <ul class="sub">
-                            <li><a href="#none">광주의연표</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#none">남도민속</a></li>
-                </ul>
-            </li>
-            <li><a href="#none">교육·행사</a>
-                <ul class="gnb">
-                    <li><a href="#none">온라인교육</a></li>
-                    <li><a href="#none">성인교육</a></li>
-                    <li><a href="#none">어린이교육</a></li>
-                    <li><a href="#none">세시행사</a></li>
-                    <li><a href="#none">문화계 소식</a></li>
-                </ul>
-            </li>
-            <li><a href="#none">이용안내·신청</a>
-                <ul class="gnb">
-                    <li><a href="#none">관람안내</a></li>
-                    <li><a href="#none">유물/사진복제</a></li>
-                    <li><a href="#none">대관신청</a></li>
-                    <li><a href="#none">민속놀이기구대여</a></li>
-                    <li><a href="#none">찾아오시는길</a></li>
-                </ul>
-            </li>
-            <li><a href="#none">박물관소개</a>
-                <ul class="gnb">
-                    <li><a href="#none">인사말</a></li>
-                    <li><a href="#none">설립목적</a></li>
-                    <li><a href="#none">박물관 연혁</a></li>
-                    <li><a href="#none">박물관 MI소개</a></li>
-                    <li><a href="#none">조직 및 업무</a></li>
-                    <li><a href="#none">전화번호</a></li>
-                    <li><a href="#none">박물관은 지금</a></li>
-                    <li><a href="#none">박물관에서 해온 일</a>
-                        <ul class="sub">
-                            <li><a href="#none">사회교육</a></li>
-                            <li><a href="#none">전시회</a></li>
-                            <li><a href="#none">조사연구</a></li>
-                            <li><a href="#none">간행물</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#none">민속박물관회</a>
-                        <ul class="sub">
-                            <li><a href="#none">소개</a></li>
-                            <li><a href="#none">걸어온 길</a></li>
-                            <li><a href="#none">입회신청</a></li>
-                        </ul>
+                    <li>
+                        대관신청
+                        <span></span><span></span><span></span><span></span>
                     </li>
                 </ul>
-            </li>
-        </ul>
-    </nav>
+            </div>
+        </section>
+        <section>
+            <div class="notice"></div>
+            <div class="n_slide"></div>
+        </section>
+        <section>
+
+        </section>
+        <section>
+
+        </section>
+    </div>
+    <script src="js/swiper.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
