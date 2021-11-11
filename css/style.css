@@ -631,7 +631,7 @@ footer{
 .fMenu a{
     width: calc(90%/6); height: 10px; display: inline-block;
     font-size: .85rem;
-    padding: 10px 0px; text-align: center;
+    padding: 10px 0px; 
 }
 .fMenu a:hover{text-decoration: underline #fff;}
 
@@ -669,6 +669,7 @@ footer{
         left: 50%;
         top: 21%;
     }
+    .notitle{font-size: 1rem; padding-top: 15px;}
     .infor{width: 80%; line-height: 10px;}
     .inforBtn{padding: 0;}
     #content .sec1, .Qtxt{display: block; text-align: left; padding: 0;}
@@ -682,6 +683,8 @@ footer{
     .sec5 #container{display: inline-block;}
     .fMenu a{
         width: calc(100%/5); height: 10px; display: inline-block;
-        font-size: .7rem;
+        font-size: .45rem;
     }
+    .familySite, .fTxt{width: 100%; display: inline-block;}
+    .fTxt{padding-bottom: 20px;}
 }
