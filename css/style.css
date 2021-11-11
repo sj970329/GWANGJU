@@ -29,7 +29,7 @@ body{
 
 header{
     width: 100%;
-    height: 100px;
+    height: 80px;
     background: #fff;
     position: fixed;
     z-index: 999;
@@ -37,20 +37,23 @@ header{
 }
 #head{
     width: 100%;
-    height: 100px;
+    height: 80px;
     display: flex;
 }
 .logo{
     width: 70%; height: auto;
-    padding: 30px 0 0 10px;
+    padding: 20px 0 0 30px;
     cursor: pointer;
+}
+.logo img{
+    max-width: 100%; height: auto;
 }
 
 /* toggle */
 .btn_container{
     position: fixed;
     width: 25px; height: 20px;
-    top: 4.5%;
+    top: 3%;
     right: 3%;
     cursor: pointer;
     z-index: 100;
@@ -111,6 +114,7 @@ nav{
 .sgnb{
     position: relative;
     font-size: 1.2rem; font-weight: bold;
+    padding-left: 30px;
 }
 .sgnb>li{
     width: 30%;
@@ -151,15 +155,49 @@ nav{
 /* information */
 .infor{
     position: absolute;
-    width: 25%; height: 45%;
+    width: 28%; height: 44%;
     background: rgba(255, 255, 255, 0.801);
     top: 20%; right: 10%;
+    overflow: hidden;
     z-index: 99;
 }
-.infor img{
+.inficon{height: 10%; padding: 15px 0 10px 0;}
+.inficon img{
     width: 40px; height: 40px;
-    padding: 10px 10px;
+    margin: 0 auto;
 }
+.inforTxt{
+    width: 100%; height: 70%;
+    padding: 10px 20px 10px 20px; box-sizing: border-box;
+}
+.inforTxt h3{
+    text-align: center; color: #333;
+    font-size: 1.35rem; padding-top: 10px;
+}
+.inTitle{
+    color: rgb(132, 52, 77);
+    padding: 5px 0;
+    font-size: 1.1rem; font-weight: bold;
+    display: flex;
+}
+.inTitle .far{width:15px; height: 15px; margin: 2px;}
+.inTitle h4{padding-left: 5px;}
+.insec1{
+    line-height: 20px;
+    padding: 20px 0;
+    color: #333; font-size: .9rem;
+}
+.insec2{
+    line-height: 20px;
+    color: #333; font-size: .9rem;
+}
+.insec2 .impor{color: #555; font-size: .85rem;}
+.inforBtn{width: 100%; height: 10%; padding-top: 10px;}
+.inforBtn li{width: 50%; font-size: .85em; float: left; text-align: left; line-height: 20px; color: #fff;}
+.inforBtn li:nth-child(1){background: #af2d2d; padding: 10px 10px; box-sizing: border-box;}
+.inforBtn li:nth-child(2){background: #cb6514; padding: 10px 10px; box-sizing: border-box;}
+.inforBtn a .fas{float: right; line-height: 20px;}
+
 /* slide */
 .mySwiper{
     width: 100%; height: 70%;
@@ -177,7 +215,7 @@ nav{
 .bg{
     width: 100%; height: 100%;
     background: rgba(0, 0, 0, 0.425);
-    position: absolute; z-index: 99;
+    position: absolute; z-index: 97;
 }
 .swiper-slide img{
     display: block;
@@ -235,12 +273,13 @@ nav{
     margin-top: 10%;
     font-size: 1.5rem;
 }
-.Quick{width: 80%;}
-.Quick ul{ 
+/* .Quick{width: 80%;} */
+.Quick{ 
+    width: 80%;
     padding: 1em 1em; 
     display: flex;
 }
-.Quick ul li { 
+.Quick li { 
     --c: rgb(132, 52, 77);
     color: var(--c);
     font-size: .8rem;
@@ -260,7 +299,7 @@ nav{
     cursor: pointer;
 }
 
-.Quick ul li span {
+.Quick li span {
     position: absolute;
     width: 25%;
     height: 100%;
@@ -273,27 +312,27 @@ nav{
     z-index: -1;
 }
 
-.Quick ul li:hover {
+.Quick li:hover {
     color: rgb(255, 255, 255);
 }
 
-.Quick ul li:hover span {
+.Quick li:hover span {
     transform: translateY(0) scale(2);
 }
 
-.Quick ul li span:nth-child(1) {
+.Quick li span:nth-child(1) {
     --n: 1;
 }
 
-.Quick ul li span:nth-child(2) {
+.Quick li span:nth-child(2) {
     --n: 2;
 }
 
-.Quick ul li span:nth-child(3) {
+.Quick li span:nth-child(3) {
     --n: 3;
 }
 
-.Quick ul li span:nth-child(4) {
+.Quick li span:nth-child(4) {
     --n: 4;
 }
 
@@ -326,7 +365,7 @@ button{background: none; border: none;}
 
 
 /* sec 3 */
-.sec3{padding: 30px; display: flex;}
+.sec3{padding: 30px; padding-bottom: 0; display: flex;}
 #s_banner_wrap {width: 35%; height: 250px; position: relative; margin:10px 0;}
 .bxslider_02{width: 35%; height: 250px;}
 .banner_01 {width: 100%; height: 100%; background: url('../img/mslide1.jpg') center center;}
@@ -348,28 +387,43 @@ button{background: none; border: none;}
 #bx-pager1 a.active{ background: #000; color: #eee;}
 
 .nowTitle{
-    width: 20%; height: 40px; position: absolute;
-    float: left;
+    width: 30%; height: 40px; position: absolute;
+    float: left; text-align: left;
     color: rgb(255, 255, 255);
     margin: 0;
-    padding-top: 10px;
+    padding: 20px 0 0 20px;
     font-size: 1.5rem; font-weight: bold; z-index: 99;
 }
-.now{width: 60%; padding: 0 20px; position: relative;}
-.btSlider{
-    width: 100%; height: 250px; padding-top: 10px;
-    overflow: hidden; position: relative;  float: left;
+.nowName{
+    font-weight: normal; font-size: .95rem;
+    line-height: 40px; color: rgba(255, 255, 255, 0.829);
 }
-.btSlider ul img{width: 700px; height: auto; opacity: .85; object-fit: center; }
-.btSlider ul{
-    width:600%; display:flex;
+.now, .now_wrap{width: 65%; height: 250px; position: relative; margin: 10px;}
+.bxslider_03{
+    width: 65%; height: 250px;
+    position: relative;
 }
-.arrow{position: absolute; top: 85px;
-    transition:.6s;
+.bx03{width: 100%; height: 100%;}
+.bx04{width: 100%; height: 100%;}
+.bxslider_03 li img{
+    display: block;
+    width: 100%; height: 100%;
+    object-fit: cover;
 }
-.left{left:20px;}
-.right{right: 20px;}   
-
+.nowsc{
+    width: 80px; height: 30px; line-height: 30px;
+    background-color: rgb(132, 52, 77); color: #fff;
+    border-radius: 30px; font-size: .8rem;
+    position: absolute;
+    bottom: 20px; right: 20px;
+    transition: .3s;
+    z-index: 101; cursor: pointer;;
+}
+.nowsc:hover{
+    background-color: #fff;
+    color: rgb(132, 52, 77);
+    font-weight: bold; transition: .3s;
+}
 
 
 .display3{width: 95%; margin: 0 auto;}
@@ -491,3 +545,41 @@ footer{
     padding: 10px 0px; text-align: center;
 }
 .fMenu a:hover{text-decoration: underline #fff;}
+
+/* desktop */
+@media all and (min-width:1024px){
+
+}
+/* tablet */
+@media all and (min-width:768px) and (max-width:1023px){
+    .slideTitle{
+        width: 100%; text-align: center;
+        left: 50%;
+        top: 21%;
+    }
+    .infor{width: 80%; line-height: 10px;}
+    .inforBtn{padding: 0;}
+}
+/* mobile */
+@media all and (max-width:767px){
+    .slideTitle{
+        width: 100%; text-align: center;
+        left: 50%;
+        top: 21%;
+    }
+    .infor{width: 80%; line-height: 10px;}
+    .inforBtn{padding: 0;}
+    #content .sec1, .Qtxt{display: block; text-align: left; padding: 0;}
+    .Qtxt{width: 100%;}
+    .Quick{display: inline-block; width: 100%; height: 100%; padding: 10px 0;}
+    .Quick li{float: left;}
+    #content .sec3, .imgbox{display: inline-block;}
+    #s_banner_wrap, .now{width: 100%; margin: 0;}
+    .rolling a{width: 100%; font-size: .7rem;}
+    #content .sec4 li{width: 100%; margin: 10px 0 auto;}
+    .sec5 #container{display: inline-block;}
+    .fMenu a{
+        width: calc(100%/5); height: 10px; display: inline-block;
+        font-size: .7rem;
+    }
+}
