@@ -517,6 +517,7 @@ button{background: none; border: none;}
     width: 100%;
     margin: 0 auto;
 }
+.fcontainer{width: 100%; margin: 0 auto;}
 .fTxt{
     margin: 0;
     color: rgb(132, 52, 77);
@@ -664,6 +665,8 @@ footer{
 }
 /* mobile */
 @media all and (max-width:767px){
+    .mySwiper, .infor{height: auto;}
+    .infor{top: 35%;}
     .slideTitle{
         width: 100%; text-align: center;
         left: 50%;
