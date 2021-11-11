@@ -517,6 +517,13 @@ button{background: none; border: none;}
     width: 100%;
     margin: 0 auto;
 }
+.fTxt{
+    margin: 0;
+    color: rgb(132, 52, 77);
+    float: left;
+    font-size: .9rem; font-weight: bold;
+    padding: 5px 0;
+}
 button{
   position: relative;
   display: inline-block;
