@@ -114,7 +114,7 @@ nav{
 .sgnb{
     position: relative;
     font-size: 1.2rem; font-weight: bold;
-    padding-left: 30px;
+    padding-left: 40px;
 }
 .sgnb>li{
     width: 30%;
@@ -130,7 +130,7 @@ nav{
 .gnb{
     display: none;
     opacity: 0;
-    position: absolute; top: 10%; left: 40%;
+    position: absolute; top: 10%; left: 50%;
     font-weight: normal; font-size: 1rem;
     animation: fadeInRight .5s ease forwards;
     animation-delay: .35s;
@@ -686,5 +686,7 @@ footer{
         font-size: .45rem;
     }
     .familySite, .fTxt{width: 100%; display: inline-block;}
-    .fTxt{padding-bottom: 20px;}
+    .fTxt{padding-bottom: 20px;} 
+    .insec1 span, .insec2 span, .insec2 .impor{font-size: .65rem;}
+    .inTitle{font-size: .9rem;}
 }
