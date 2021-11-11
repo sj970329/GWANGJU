@@ -229,7 +229,7 @@ nav{
     top: 60%;
     transform: translate(-50%, -50%);
     opacity: 1;
-    font-size: 1rem; color: #fff;
+    font-size: .8rem; color: #fff;
     font-weight: bold;
     z-index: 99;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -245,7 +245,7 @@ nav{
 }
 .slideTitle h2 .ani{
     text-shadow: 2px 4px 2px rgb(27, 27, 27);
-    font-size: 2rem;
+    font-size: 1.8rem;
     animation: txt 10s infinite;
 }
 @keyframes txt{
