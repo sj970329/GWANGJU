@@ -666,6 +666,7 @@ footer{
 /* mobile */
 @media all and (max-width:767px){
     .sgnb{padding-left: 20px;}
+    .gnb{padding-left: 40px;}
     .mySwiper, .infor{height: auto;}
     .infor{top: 35%;}
     .slideTitle{
