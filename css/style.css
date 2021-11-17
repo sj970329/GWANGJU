@@ -150,7 +150,10 @@ nav{
     font-weight: normal; font-size: .8rem;
     color: rgb(228, 205, 156);
 }
-.sub.on{font-weight: normal; font-size: .8rem;}
+.sub.on{
+    display: block;
+    font-weight: normal; font-size: .8rem;
+}
 
 /* information */
 .infor{
