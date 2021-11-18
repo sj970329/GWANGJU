@@ -33,7 +33,7 @@ header{
     background: #fff;
     position: fixed;
     z-index: 999;
-    box-shadow: 0 5px 10px 0 rgb(50 50 50 / 6%);
+    box-shadow: 0 5px 10px 0 rgba(50,50,50, 0.2);
 }
 #head{
     width: 100%;
@@ -237,7 +237,7 @@ nav{
     z-index: 99;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     letter-spacing: -1px;
-    text-shadow: 0 2px 8px rgb(0 0 0 / 15%);
+    text-shadow: 0 2px 8px rgba(0,0,0, .2);
     z-index: 999;
 }
 
@@ -277,7 +277,8 @@ nav{
     margin-top: 30px;
     font-size: 1.5rem;
 }
-/* .Quick{width: 80%;} */
+
+/* .Quick */
 .Quick{ 
     width: 80%;
     padding: 1em 1em; 
@@ -354,7 +355,7 @@ nav{
     color: rgb(132, 52, 77);
     margin: 0;
     padding-top: 10px;
-    font-size: 1.5rem; font-weight: bold;
+    font-weight: bold;
 }
 .rolling{float: left; position: absolute;}
 .rolling li{width: 70%; height: 40px; float: left; padding-left: 20%;}
