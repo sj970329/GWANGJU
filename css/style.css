@@ -258,7 +258,7 @@ nav{
 }
 
 /* content */
-#content section{
+#content article{
     width: 90%;
     margin: 0 auto;
     padding-top: 20px;
@@ -271,7 +271,8 @@ nav{
 .Qtxt{
     width: 20%; margin: 0;
 }
-.Qtxt p{
+.Qtxt h2{
+    font-weight: normal;
     color: #333;
     margin-top: 30px;
     font-size: 1.5rem;
@@ -360,7 +361,7 @@ nav{
 .rolling a{width: 60%; line-height: 40px; padding: 5px 0 5px 10px;}
 .rolling a img{width: 20px; height: 20px; margin: 0; padding: 10px; float: left;}
 .rolling a span{color: rgb(89,87,87);}
-.cont{width:15px; position: absolute; top: 2px; right: 15px;}
+.cont{width:15px; position: absolute; top: 3px; right: 15px;}
 .cont .up{padding: 5px;}
 .cont .down{padding: 5px;}
 button{background: none; border: none;}
@@ -483,7 +484,7 @@ button{background: none; border: none;}
     margin: 0 auto;
     font-size: 1.5rem; font-weight: bold;
 }
-.cotitle p{padding-left: 2%;}
+.cotitle h3{padding-left: 2%; color: rgb(132, 52, 77)!important;}
 .cotitle .more{
     margin: 0;
     color: rgb(132, 52, 77);
@@ -512,21 +513,29 @@ button{background: none; border: none;}
 .sec5 a:hover img{opacity: 1;}
 
 /* sec 6 */
+.sec6{
+    margin: 0 auto;
+    display: flex;
+}
 .familySite{
     width: 100%;
-    padding: 20px 0;
+    padding: 20px 0; box-sizing: border-box;
 }
-.familySite .fnav{
-    width: 100%;
-    margin: 0 auto;
-}
-.fcontainer{width: 100%; margin: 0 auto;}
-.fTxt{
-    margin: 0;
-    color: rgb(132, 52, 77);
+#fcontainer{
     float: left;
-    font-size: .9rem; font-weight: bold;
-    padding: 5px 0;
+    margin: 0;
+    width: 90%; 
+}
+.fTxt{
+    float: left;
+    text-align: center;
+    margin: 0;
+    width: 10%;
+}
+.fTxt h3{
+    color: rgb(132, 52, 77);
+    font-size: 1rem; font-weight: bold;
+    padding: 5px 0; box-sizing: border-box;
 }
 button{
   position: relative;
@@ -665,6 +674,7 @@ footer{
         width: calc(100%/5); height: 10px; display: inline-block;
         font-size: .7rem;
     }
+    #fcontainer{width: 100%; margin: 0 auto;}
 }
 /* mobile */
 @media all and (max-width:767px){
